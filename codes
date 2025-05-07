@@ -1,5 +1,5 @@
 
-```cpp
+
 int potPin = A0;
 int ledPin = 9;
 
@@ -20,4 +20,4 @@ void loop() {
 
   delay(10);
 }
-```
+
