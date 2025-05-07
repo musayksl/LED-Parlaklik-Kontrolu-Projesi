@@ -51,7 +51,7 @@ void loop() {
   Serial.print(" | LED Parlakligi: ");
   Serial.println(ledBrightness);
 
-  delay(10);
+  delay(100);
 }
 ```
 
