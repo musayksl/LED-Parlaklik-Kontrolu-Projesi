@@ -1,1 +1,23 @@
 
+```cpp
+int potPin = A0;
+int ledPin = 9;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int potValue = analogRead(potPin);
+  int ledBrightness = map(potValue, 0, 1023, 0, 255);
+  analogWrite(ledPin, ledBrightness);
+
+  Serial.print("Potansiyometre Degeri: ");
+  Serial.print(potValue);
+  Serial.print(" | LED Parlakligi: ");
+  Serial.println(ledBrightness);
+
+  delay(10);
+}
+```
