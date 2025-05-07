@@ -7,32 +7,32 @@ Bu proje, bir potansiyometre kullanarak bir LED'in parlaklığını manuel olara
 
 ## Kullanılan Malzemeler
 
--Arduino UNO
+- Arduino UNO
 
--Potansiyometre (10K ohm)
+- Potansiyometre (10K ohm)
 
--LED
+- LED
 
--220 Ohm Direnç
+- 220 Ohm Direnç
 
--Breadboard
+- Breadboard
 
--Jumper Kablolar
+- Jumper Kablolar
 
 ## Devre Bağlantısı
 
-Potansiyometre orta ucu (Vout) → A0 pinine
+- Potansiyometre orta ucu (Vout) → A0 pinine
 
-Potansiyometre bir ucu → 5V, diğer ucu → GND
+- Potansiyometre bir ucu → 5V, diğer ucu → GND
 
-LED uzun bacak (anot) → 220 Ohm → D9 pinine
+- LED uzun bacak (anot) → 220 Ohm → D9 pinine
 
-LED kısa bacak (katot) → GND
+- LED kısa bacak (katot) → GND
 
 ## Kod Açıklaması
 
 Arduino analog pininden (A0) gelen potansiyometre değeri PWM ile LED parlaklığını ayarlar.
-cpp
+```cpp
 int potPin = A0;
 int ledPin = 9;
 
@@ -53,6 +53,7 @@ void loop() {
 
   delay(10);
 }
+```
 
 ## Proje Açıklaması
 
